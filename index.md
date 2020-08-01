@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 
-You can use the [editor on GitHub](https://github.com/kbaur775/kbaur775.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+</head>
+<body>
+    <header>
+        <p class="h1" style="font-weight: bold; margin-bottom: 3%; text-align: center;">Password Generator</p>
+    </header>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!-- BOOTSTRAP CARD ELEMENT ADDED -->
+     <div class="card shadow-sm bg-white" style="min-width: 40%; max-height: 50%;">
+        <div class="card-body">
+            <h2 class="card-title" style="font-weight: bold">Generate a Password</h2>
+            <textarea style= "margin:5% auto; padding: 10%; text-align:center; border: dashed 2px grey; width: 100%;" readonly id="password" placeholder="Your Secure Password"></textarea>
+            
+            <div class="row justify-content-between m-0">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+<!-- Click Button -->
+                 <button onclick="generatePass()" type="button" class="btn btn-light" style= "text-align:center; border-radius:20px; background-color: darkred; color:white;">Generate Password</button>
+                </div>
+               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+               </div>    
+            </div>
+        </div>
+    </div>
+        
+<!-- JavaScript -->
+  <script src=script.js> </script>
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kbaur775/kbaur775.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
